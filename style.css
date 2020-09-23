@@ -1,0 +1,364 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 31, 2020, 1:48:49 AM
+    Author     : gupta
+*/
+
+@font-face{
+    font-family: "Times New Roman";
+    src: url('..\fonts\times.ttf');
+}
+
+body{
+    background-image: url("bg1.jpg");
+}
+
+#temp{
+    position: absolute;
+    right:20px;
+}
+
+#caption{
+    font-weight: 600;
+    font-size: 5px;
+    margin-top: -3px;
+}
+
+#heading_comp{
+     position: absolute;
+     left: 35%;
+     top: 30px;
+     font-family:  "Times New Roman";
+     font-size: 30px;
+     color: darkslateblue;
+     font-weight: 600;
+}
+
+#welcome_guest_group div{
+    display: inline;
+}
+
+#welcome_guest_group{
+    margin-top: 10px;
+}
+
+#welcome_message{
+  color: darkslategrey; 
+  margin-left: 5px;
+}
+
+#guest_message{
+    margin-left: 5px;
+    color: #3EA055;
+    font-weight: 600;
+}
+
+a{
+ color: darkslategrey;   
+ margin-left: 30px;
+}
+
+.btn-group button {
+  background-color: #FFF5EE;
+  border: 3px solid #AFDCEC;
+  margin-top: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+  background-color: #F5F5F5;
+}
+
+#qlinks{
+    margin-top: 3px;
+    border: 2px solid #79BAEC;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+    width: 97%;
+    font-family:  "Times New Roman";
+    background-image: linear-gradient(lightcyan,seashell);
+}
+
+#qlinks_heading{
+    font-weight: 600;
+    color: darkslateblue;
+    background-color: #79BAEC;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+aside{  
+    width: 15%;
+    float: left;
+    height: 100%;
+}
+
+ul,li{
+    margin-top: 10px;
+}
+
+html,body{
+    height: 100%;
+}
+
+section{
+    height:100%;
+    margin-left: 15%;
+}
+
+#main_area{
+    height: 100%;
+    background-image: linear-gradient(lightcyan,lightblue,seashell);
+}
+
+#tender_table{
+    background-image: linear-gradient(lightcyan,seashell);
+    border: 0.25px solid black;
+}
+
+#caption1{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: darkslateblue;
+    font-size: 20px;
+    background-image: linear-gradient(#B4CFEC,lightcyan,#B4CFEC);
+}
+
+caption{
+    background: lightgrey;
+    color: #C11B17;
+    font-weight: 600;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 17px;
+}
+
+table,td,th,caption{
+    border: 0.25px solid lightblue;
+    border-collapse: collapse;
+}
+
+th{
+    text-decoration: underline;
+}
+
+th{
+    text-align: left;
+    color: #3090C7;
+}
+
+th{
+    background-color: lightcyan;
+}
+
+table tr:nth-child(even) {
+  background-color: #eee;
+}
+
+table tr:nth-child(odd) {
+  background-color: lightgrey;
+}
+
+#login_heading{
+    font-weight: 600;
+    color: darkslateblue;
+    background-color: #79BAEC;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+    font-size: 25px;
+}
+
+#login_form{
+    margin-top: 3px;
+    border: 2px solid #79BAEC;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+    width: 95%;
+    font-family:  "Times New Roman";
+    padding-bottom: 50px;
+    background-image: linear-gradient(lightcyan,seashell);
+}
+
+#label_for_staffno{
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+#label_for_password{
+   margin-left: 10px;
+   margin-right: 5px;
+   font-size: 20px;
+}
+
+#staffno_input{
+    margin-left:8px;
+    font-size: 17px;
+}
+
+#password_input{
+    font-size: 17px;
+}
+
+button[name=login_btn]{
+    background-color: skyblue;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid skyblue;
+    border-radius: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+button[name=login_btn]:hover {
+  background-color: #F5F5F5;
+}
+
+a[name=forgot]{
+    color: blue;
+    margin-right:20px;
+    font-size: 20px;
+}
+
+a[name=help]{
+    font-size: 20px;
+}
+
+.error {
+    padding-top:20px;
+    color: red;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.success {
+    padding-top:20px;
+    color: limegreen;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+#passwordrecovery_heading
+{
+    font-weight: 600;
+    color: darkslateblue;
+    background-color: #79BAEC;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+    font-size: 25px;
+}
+
+#passwordrecovery_form
+{   margin-top: 3px;
+    border: 2px solid #79BAEC;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+    width: 95%;
+    font-family:  "Times New Roman";
+    padding-bottom: 50px;
+    background-image: linear-gradient(lightcyan,seashell);
+}
+
+button[name=enter_btn]{
+    background-color: skyblue;
+    padding: 5px;
+    cursor: pointer;
+    border: 1px solid skyblue;
+    border-radius: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 17px;
+}
+
+button[name=enter_btn]:hover {
+  background-color: #F5F5F5;
+}
+
+button[name=enterbtn]{
+    border: 1px solid gray;
+}
+
+#instruction{
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+#labelfor_enterstaffno{
+    font-size: 20px;
+}
+
+#enterstaffno{
+   margin-left: 20px; 
+   padding: 3px;
+   font-size: 17px;
+   align-content: center;
+}
+
+#annexure_list_heading{
+    margin-top: 3px;
+    padding-top: 15px;
+    font-weight: 600;
+    font-size: 25px;
+    padding-left: 25px;
+    font-family:"Times New Roman";
+
+}
+
+#table_options{
+    margin: 3px;
+    padding: 5px;
+}
+
+button[name=add_btn],[name=edit_btn],[name=delete_btn]{
+    border-radius: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    background-color: #FFF5EE;
+    border: 1px solid #AFDCEC;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+button[name=add_btn]:hover,[name=edit_btn]:hover,[name=delete_btn]:hover {
+  background-color: #F5F5F5;
+}
+
+.selected {
+    color: red;
+}
+
+.edit{
+ width: 100%;
+}
+.editMode{
+ border: 1px solid black;
+}
